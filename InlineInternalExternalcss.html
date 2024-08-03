@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Inline CSS has the highest priority -->
+    <!-- We can use important keyword to decide priority between internal and external css (see working in codewithharry video)-->
+    <!-- Priority between internal and external css depends on which comes after i.e. baad mai konsa aata hai jaise agar external phele hai or internal css baad mai toh internal ka content priority lega and vice versa -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, Internal and External CSS</title>
+    <!-- External CSS means including external css file in the head of html -->
+    <link rel="stylesheet" href="/CSS/InlineInternalExternal.css">
+
+    <!-- Internal CSS means which is used inside html head by targeting a specific thing -->
+    <!-- It will make all the paragraph color same as mentioned in the style tag, same phenomenon happens with external css -->
+    <style>
+        /* It is a CSS comment */
+        
+        /* This is called Element Selector */
+        p{
+            color: yellow;
+            border: 10px solid greenyellow; 
+            /* background-color: black; */
+        }
+        /* it is taking the bgcolor from external css file */
+    </style>
+</head>
+<body>
+    <!-- Inline CSS means css which is used inside html body as 
+    shown-->
+    <!-- <p style="color: blue; background-color: darkorange;">This line shows how inline css works.</p> -->
+    <p>This line shows how internal and external css works.</p>
+</body>
+</html>

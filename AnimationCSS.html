@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations and Keyframes in CSS</title>
+    <style>
+      .container {
+        background-color: rgb(99, 89, 89);
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        background-color: rgb(145, 84, 163);
+        position: relative;
+
+        /* Animation Properties */
+        animation-name: ayush;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        /* animation-iteration-count: infinite; */
+        /* We can give number too in animation-iteration-mode */
+
+        animation-fill-mode: forwards;
+        /* animation-fill-mode: backwards; */
+        /* animation-fill-mode: alternate; */
+
+        animation-timing-function: ease-in;
+        /* animation-timing-function: ease-out; */
+        /* animation-timing-function: ease-in-out; */
+
+        animation-delay: 3s;
+
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: ayush 5s ease-in 1s 12 backwards; */
+      }
+
+      @keyframes ayush {
+        from {
+          width: 150px;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      /* @keyframes ayush {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 250px;
+          left: 0px;
+        }
+        75% {
+          top: 250px;
+          left: 250px;
+        }
+        100% {
+          top: 0px;
+          left: 250px;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

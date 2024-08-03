@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container{
+            display: flex;
+            height: 400px;
+            width: 100%;
+            background-color: rgb(160, 189, 189);
+            border: 4px solid blue;
+
+            /* flex properties for container/parent block */
+            /* flex-direction: row; */    /* default */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap; */    /* no-wrap is default in flex wrap */   
+            /* flex-wrap: wrap-reverse; */
+
+            /* Shorthand to specify both flex-direction and flex-wrap */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content will justify the content in horizontal(i.e main-axis) direction and it depends on flex direction */
+            /* justify-content: center;
+            justify-content: end; */
+            /* justify-content: start; */     /* Default */
+            /* justify-content: space-around;  
+            justify-content: space-between;
+            justify-content: space-evenly; */
+
+            /* align-items will justify the content in vertical(i.e cross-axis) direction and it depends on flex direction */
+            /* align-items: center;
+            align-items: end; */
+            /* align-items: stretch; */    /* vertical even spaces */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+
+            /* justify content and align items depends on axis and axis depends on flex direction like for column flex direction 
+            main axis will be the y-axis and cross axis will be the x-axis i.e justify content will now center the items in
+            vertical direction and align items will center the items horizontally*/
+        }
+        .item{
+            height: 150px;
+            width: 150px;
+            border: 4px solid black;
+            background-color: rgb(42, 116, 228);
+            margin: 10px;
+            padding: 6px;
+        }
+        #item-1{
+            /* Flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            flex-grow: 2;
+            flex-shrink: 2;
+
+        }
+        #item-2{
+            /* flex-grow: 3;
+            flex-shrink: 3 ; */
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis will control width */
+            /* when flex-direction is set to column flex-basis will control height */
+        }
+        #item-3{
+            /* Shorthand for flex grow, shrink and basis */
+            /* flex: 2 2 230px; */
+
+            /* Aligns item/one item/self vertically */
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">First box</div>
+        <div class="item" id="item-2">Second box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+    </div>
+</body>
+</html>

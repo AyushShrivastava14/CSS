@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .card {
+        /* border: 2px solid red; */
+        margin: 10px 10px;
+        padding: 3px 10px;
+        background-color: burlywood;
+        border-radius: 15px;
+        
+        /* box-shadow property writing formats */
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y blur-radius color; */
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+        /* box-shadow: 10px 10px brown; */
+
+        /* For shadow in upper part */
+        /* box-shadow: -10px -10px brown; */
+        
+        /* box-shadow: 10px 10px 15px brown;
+        box-shadow: -10px -10px 15px brown; */
+
+        box-shadow: 10px 10px 15px 5px rgba(168, 64, 64, 0.7);
+        box-shadow: inset 0px 60px rgba(168, 64, 64, 0.7);
+      }
+      /* .card h2{
+        text-shadow: 1px 1px white;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card-1">
+        <h2>Box-1</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          quaerat veniam modi voluptatibus officia nostrum reiciendis officiis
+          illo, aspernatur laborum quibusdam quidem minima maxime aliquam
+          architecto praesentium perferendis! Soluta, cumque iusto. Veritatis,
+          repudiandae ex?
+        </p>
+      </div>
+      <div class="card" id="card-2">
+        <h2>Box-2</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          quaerat veniam modi voluptatibus officia nostrum reiciendis officiis
+          illo, aspernatur laborum quibusdam quidem minima maxime aliquam
+          architecto praesentium perferendis! Soluta, cumque iusto. Veritatis,
+          repudiandae ex?
+        </p>
+      </div>
+      <div class="card" id="card-3">
+        <h2>Box-3</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          quaerat veniam modi voluptatibus officia nostrum reiciendis officiis
+          illo, aspernatur laborum quibusdam quidem minima maxime aliquam
+          architecto praesentium perferendis! Soluta, cumque iusto. Veritatis,
+          repudiandae ex?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Selectors</title>
+    <style>
+        /* This targets all the para inside div i.e. inside every div */
+        /* div p {
+            background-color: black;
+            color: yellow;
+        } */
+
+        /* This targets the child para i.e. a para which is inside of div and not inside of anything else */
+        /* div > p {
+            background-color: green;
+            color: white;
+        } */
+
+        /* This targets a para whose upper sibling is a div i.e. if para is right after div */
+        div + p {
+            background-color: rgb(75, 75, 138);
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This is a list para</p></li>
+            </ul>
+            <p>This is second div para</p>
+        </div>
+        <p>This is first div para</p>
+    </div>
+    <p>This is body para</p>
+</body>
+</html>

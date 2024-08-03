@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container{
+            border: 4px solid rgb(247, 2, 2);
+            background-color: rgb(238 243 186);
+            border-radius: 20px;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+
+        #computer{
+            float: right;
+            width: 48%;
+        }
+
+        #stationary{
+            clear: both;
+        }
+
+        .item{
+            border: 4px solid black;
+            margin: 20px 5px;
+            background-color: #aac9c9;
+            padding: 20px;
+        }
+
+        p,h3{
+            /* text-align: left;
+            text-align: right;            
+            text-align: center; */
+            text-align: justify;
+        }
+
+        #h1{
+            margin: 20px auto;
+            width: 330px;
+        }
+        /* margin: auto only centers the block only and if the block width is already full(100%) then obviously it cannot center it as the screen is already full with it. */
+        /* https://stackoverflow.com/questions/14756204/why-marginauto-doesnt-work (link for better explanation) or watch codewithharry display css video at time stab 4:00*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="h1">Welcome to my Store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque adipisci quia nam ea vitae voluptate consectetur reprehenderit aut quibusdam quae necessitatibus, eligendi harum mollitia assumenda? Praesentium, cumque. Quis, in.
+            </p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque adipisci quia nam ea vitae voluptate consectetur reprehenderit aut quibusdam quae necessitatibus, eligendi harum mollitia assumenda? Praesentium, cumque. Quis, in.
+            </p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus atque adipisci quia nam ea vitae voluptate consectetur reprehenderit aut quibusdam quae necessitatibus, eligendi harum mollitia assumenda? Praesentium, cumque. Quis, in.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

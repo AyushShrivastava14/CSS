@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Variables</title>
+    <style>
+        :root{
+            /* root is used to declare global variables */
+            --maxw: 700px;
+        }
+        .box{
+            /* Variables (It can be accessed locally only) */
+            --box-color: rgb(97, 59, 59);
+            background-color: var(--box-color);
+
+            height: 150px;
+            width: 150px;
+            border: 4px solid rgb(48, 182, 175);
+            margin: 3px 10px;
+        }
+        .container{
+
+            /* Global Variable */
+            max-width: var(--maxw);
+
+            margin: auto;
+            display: flex;
+            border: 4px solid black;
+
+            /* We can't access box color variable here since it is a local variable */
+            /* border: 4px solid var(--box-color); */
+
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Border and Background</title>
+    <style>
+        #first{
+            height: 140px;
+            width: 345px;
+            background-color:chartreuse;
+            border: 4px solid red;
+            /* or we can use
+            border-width: 4px;
+            border-style: solid;
+            border-color: red; */
+            border-radius: 13px;
+        }
+
+        #second{
+            height: 140px;
+            width: 345px;
+            background-color: chocolate;
+            border-top: 4px solid black;
+            border-left: 4px solid blue;
+            border-right: 4px solid rgb(0, 255, 98);
+            border-bottom: 4px solid red;
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+            border-bottom-left-radius: 13px;
+            border-bottom-right-radius: 13px;
+        }
+
+        #third{
+            height: 240px;
+            width: 345px;
+            background-image: url("https://yt3.ggpht.com/yti/AOXPAcXwjXtRqn2k_xN3-xmhRJEuUw02-7JJTFy_ysxzzw=s108-c-k-c0x00ffffff-no-rj");
+            border: 4px solid yellowgreen;
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x;
+            background-repeat: repeat-y; */
+            background-position: center;
+            /* background-position: top right; */
+            /* background-position: <top,bottom or center> <left,right>; */
+            /* background-position: 120px 10px; */
+        }
+    </style>
+</head>
+<body>
+    <h3>This file shows funtioning of borders and background.</h3>
+    <p id="first">This is the first paragraph.</p>
+    <p id="second">This is the second paragraph.</p>
+    <p id="third">This is the third paragraph.</p> 
+</body>
+</html>

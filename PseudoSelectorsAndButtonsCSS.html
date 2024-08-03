@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors, Styling links and Buttons</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        .container{
+            background-color: rgb(172 124 52);
+            border: 2px solid crimson;
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        a{
+            text-decoration: none;
+        }
+        
+        .btn{
+            background-color: #cf9c79;
+            padding: 2px;
+            margin: 2px;
+            border: none;
+            cursor: pointer;
+            font-size: 15pxpx;
+            border-radius: 4px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .btn:hover{
+            background-color: white;
+        }
+
+        /* if the link is even visited once then it will show the visited 
+        property (since the site is visited by the server once so it will not show the hover properties after refresh to until new site is given) */
+        .btn:visited{
+            background-color: darkorange; 
+        }
+
+        .btn:active{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, et omnis, libero magni aut dignissimos dolorum obcaecati odio perferendis cumque amet error. Necessitatibus esse eligendi accusantium! Esse dolorem natus animi.</p>
+        <a href="https://yahoo.com" class="btn">Read more</a>
+        <button class="btn">Contact Me</button>
+    </div>
+</body>
+</html>
